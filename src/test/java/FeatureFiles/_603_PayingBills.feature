@@ -1,0 +1,1 @@
+Feature: Paying bills functionality
