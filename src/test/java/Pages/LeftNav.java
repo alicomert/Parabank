@@ -12,7 +12,7 @@ public class LeftNav extends ParentPage {
     }
 
     //Örnek
-    @FindBy(xpath = "//*[@id=\"leftPanel\"]/ul/li[1]/a")
+    @FindBy(xpath = "//a[text()='Open New Account']")
     public WebElement openNewAcc;
 
     @FindBy(xpath = "//*[@id=\"leftPanel\"]/ul/li[2]/a")
