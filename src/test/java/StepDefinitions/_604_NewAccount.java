@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class MyStepdefs604 {
+public class _604_NewAccount {
 
     _604_DialogContent dc4=new _604_DialogContent();
    LeftNav ln=new LeftNav();
