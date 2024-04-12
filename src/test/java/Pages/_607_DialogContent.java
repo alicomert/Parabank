@@ -12,15 +12,37 @@ public class _607_DialogContent extends ParentPage{
         PageFactory.initElements(GWD.getDriver(),this);
     }
 
-    @FindBy(css="[formcontrolname='username']")
-    public WebElement username;
+
+    @FindBy(xpath="//*[@id='customer.firstName']")
+    public WebElement firstName;
+    @FindBy(xpath="//*[@id='customer.lastName']")
+    public WebElement lastName;
+    @FindBy(xpath="//*[@id='customer.address.street']")
+    public WebElement address;
+    @FindBy(xpath="//*[@id='customer.address.city']")
+    public WebElement city;
+    @FindBy(xpath="//*[@id='customer.address.state']")
+    public WebElement state;
+    @FindBy(xpath="//*[@id='customer.address.zipCode']")
+    public WebElement zipCode;
+    @FindBy(xpath="//*[@id='customer.phoneNumber']")
+    public WebElement phone;
+    @FindBy(xpath = "(//*[@class='button'])[2]")
+    public WebElement savaButton;
 
 
 
     public WebElement getWebElement(String strElement){
 
         switch (strElement){
-            case "username" : return this.username;
+            case "firstName" : return this.firstName;
+            case "lastName" : return this.lastName;
+            case "address" : return this.address;
+            case "city" : return this.city;
+            case "state" : return this.state;
+            case "zipCode" : return this.zipCode;
+            case "phone" : return this.phone;
+            case "savaButton" : return this.savaButton;
 
         }
 

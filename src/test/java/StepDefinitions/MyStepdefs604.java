@@ -25,15 +25,15 @@ public class MyStepdefs604 {
 
     @When("Enter username and password and click login button")
     public void enterUsernameAndPasswordAndClickLoginButton() {
-        dc4.mySendKeys(dc4.username,"bob");
-        dc4.mySendKeys(dc4.password,"123456");
+        dc4.mySendKeys(dc4.username,"123");
+        dc4.mySendKeys(dc4.password,"123");
         dc4.myClick(dc4.LoginButton);
     }
 
     @Then("User should login successfully")
     public void userShouldLoginSuccessfully() {
 
-        dc4.verifyContainsText(dc4.LoginSuccessText,"bob");
+        dc4.verifyContainsText(dc4.LoginSuccessText,"123");
     }
 
     @And("Click on the Element in LeftNav")
